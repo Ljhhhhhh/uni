@@ -7,10 +7,14 @@
 <script>
 	export default {
 		onLoad: function() {
-			var loginRes = this.checkLogin('../index/index', '2');
-			if (!loginRes) {
-				return false;
-			}
+			uni.request({
+				url: this.apiServer + 'index&m=index',
+        method: 'GET',
+        data: {},
+        success: (res) => {
+          console.log(res);
+        }
+			})
 		},
 		
 	}
