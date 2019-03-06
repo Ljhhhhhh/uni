@@ -1,1 +1,1 @@
-<template name="65c834fc"><view class="_view 65c834fc"><button class="_button 65c834fc login_btn" bindgetuserinfo="handleProxy" open-type="getUserInfo" bindtap="handleProxy" data-eventid="{{'65c834fc-0'}}" data-comkey="{{$k}}">点击登录</button></view></template>
+<template name="2d8d4fae"><view class="_view 2d8d4fae"><button type="primary" bindgetuserinfo="handleProxy" open-type="getUserInfo" data-eventid="{{'2d8d4fae-0'}}" data-comkey="{{$k}}" class="_button 2d8d4fae">点击登录</button></view></template>
