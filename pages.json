@@ -16,6 +16,10 @@
         {
             "path" : "pages/login/login",
             "style" : {}
+        },
+        {
+            "path" : "pages/editArt/editArt",
+            "style" : {}
         }
     ],
     "tabBar" : {

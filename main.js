@@ -18,7 +18,8 @@ Vue.prototype.checkLogin = function(backpage, backtype) {
 }
 
 var APITOKEN  = 'api2018';
-Vue.prototype.apiServer = 'http://192.168.1.101/index.php?token='+APITOKEN+'&c=member&m=login';
+Vue.prototype.apiServer = 'http://192.168.1.128/index.php?token='+APITOKEN+'&c=';
+Vue.prototype.staticServer = 'http://192.168.1.128';
 
 App.mpType = 'app'
 

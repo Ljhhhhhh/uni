@@ -10,8 +10,10 @@
 
 <script>
 	let _self, openid, session_key, pageOptions;
+  const sign = require('../../common/sign.js');
 	export default {
 		onLoad(options) {
+      sign.sign(this.apiServer);
 			_self = this;
 			pageOptions = options;
 			// #ifdef MP-WEIXIN
@@ -41,6 +43,8 @@
 				if (e) {
 					console.log('用户信息：', e);
 				}
+        const sign = uni.getStorageSync('sign');
+        console.log(sign, 'sign');
 				uni.getUserInfo({
 					success: (info) => {
 						const {
@@ -57,6 +61,7 @@
 								openid: openid,
 								name: nickName,
 								face: avatarUrl,
+                sign: sign
 							},
 							success: (res) => {
 								console.log('userdata:', res);
@@ -112,6 +117,7 @@
 												openid: info.userInfo.openId,
 												name: info.userInfo.nickName,
 												face: info.userInfo.avatarUrl,
+                        sign: sign
 											},
 											success: res => {
 												res = res.data;

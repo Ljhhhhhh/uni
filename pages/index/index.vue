@@ -6,8 +6,13 @@
 
 <script>
 	export default {
+    data() {
+      return {
+        arr: [].concat()
+      }
+    },
 		onLoad: function() {
-			
+      console.log();
 		},
 		
 	}
